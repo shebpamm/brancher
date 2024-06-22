@@ -135,7 +135,9 @@ dependencies = [
  "env_logger",
  "git2",
  "gouqi",
+ "log",
  "openai_api_rust",
+ "regex",
  "tokio",
  "tokio-macros 0.2.6",
 ]

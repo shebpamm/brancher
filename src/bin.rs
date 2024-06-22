@@ -10,7 +10,7 @@ fn main() -> Result<()>{
     let issues = jira.get_user_issues()?;
     let diff = get_changes()?;
 
-    let content = ai::choose_ticket();
+    let content = ai::choose_ticket(diff, issues)?;
     println!("{}", content);
 
     Ok(())
